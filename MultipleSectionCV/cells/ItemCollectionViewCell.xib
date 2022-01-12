@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCollectionViewCell" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="MultipleSectionCV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="206"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ja-Pn-jQP">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="206"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-JX-4ln">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="to4-ta-UI8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macbook Air Ma 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOd-PR-WiB">
+                                <rect key="frame" x="20" y="108" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1799" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-eQ-Trl">
+                                <rect key="frame" x="20" y="137" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FOd-PR-WiB" firstAttribute="top" secondItem="Z0b-JX-4ln" secondAttribute="bottom" constant="8" id="IGa-Fm-ac3"/>
+                            <constraint firstAttribute="trailing" secondItem="FOd-PR-WiB" secondAttribute="trailing" constant="20" id="KHt-Vh-t2a"/>
+                            <constraint firstItem="nzu-eQ-Trl" firstAttribute="top" secondItem="FOd-PR-WiB" secondAttribute="bottom" constant="8" id="L7U-mu-1jA"/>
+                            <constraint firstItem="Z0b-JX-4ln" firstAttribute="leading" secondItem="0ja-Pn-jQP" secondAttribute="leading" id="Mci-Tf-NOe"/>
+                            <constraint firstItem="FOd-PR-WiB" firstAttribute="leading" secondItem="0ja-Pn-jQP" secondAttribute="leading" constant="20" id="N1A-2h-bcj"/>
+                            <constraint firstAttribute="trailing" secondItem="Z0b-JX-4ln" secondAttribute="trailing" id="PbW-4b-gqs"/>
+                            <constraint firstItem="nzu-eQ-Trl" firstAttribute="leading" secondItem="FOd-PR-WiB" secondAttribute="leading" id="eQF-tw-e9G"/>
+                            <constraint firstItem="Z0b-JX-4ln" firstAttribute="top" secondItem="0ja-Pn-jQP" secondAttribute="top" id="iq9-pK-Vfc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0ja-Pn-jQP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jDu-E9-gDs"/>
+                <constraint firstAttribute="bottom" secondItem="0ja-Pn-jQP" secondAttribute="bottom" id="pH8-pv-5Wa"/>
+                <constraint firstItem="0ja-Pn-jQP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rH7-bA-09c"/>
+                <constraint firstAttribute="trailing" secondItem="0ja-Pn-jQP" secondAttribute="trailing" id="tKA-Dg-HuC"/>
+            </constraints>
+            <size key="customSize" width="224" height="206"/>
+            <connections>
+                <outlet property="itemImage" destination="Z0b-JX-4ln" id="mrz-my-Iu2"/>
+                <outlet property="itemName" destination="FOd-PR-WiB" id="Ncg-oE-nrN"/>
+                <outlet property="itemPrice" destination="nzu-eQ-Trl" id="Dhd-LR-G05"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="60.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
